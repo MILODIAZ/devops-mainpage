@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install --verbose
+RUN npm install --timeout=0
 
 COPY . .
 

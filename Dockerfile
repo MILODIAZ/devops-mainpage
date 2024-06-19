@@ -1,10 +1,10 @@
-FROM node:16-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install --timeout=0
+RUN npm install
 
 COPY . .
 
